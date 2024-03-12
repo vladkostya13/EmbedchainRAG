@@ -20,11 +20,12 @@ You'll also need to install specific models and dependencies:
 
 Dependencies should be installed using the `requirements.txt` file included in the project:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 Ensure Docker is running on your machine, then build and start the services using Docker Compose:
 
+`docker-compose up --build`
 
 This will start the application in a Docker container, installing all necessary dependencies as outlined in the Dockerfile and `requirements.txt`.
 
