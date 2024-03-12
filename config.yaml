@@ -1,0 +1,32 @@
+llm:
+  provider: ollama
+  config:
+    model: 'neural-chat'
+    base_url: 'http://localhost:11434'
+    temperature: 0.5
+    max_tokens: 2096
+    top_p: 1
+embedder:
+  provider: huggingface
+  config:
+    model: 'sentence-transformers/all-MiniLM-L6-v2'
+vectordb:
+  provider: chroma
+  config:
+    collection_name: 'documents'
+    dir: db
+    allow_reset: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
