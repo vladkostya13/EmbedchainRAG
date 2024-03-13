@@ -104,8 +104,8 @@ async def upload_file(file: UploadFile = File(...)):
 @app.post("/query")
 async def get_answer(user_input: UserInput):
     response = embedchain_app.query(user_input.question)
-    return {"response": response}
+    return response
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
